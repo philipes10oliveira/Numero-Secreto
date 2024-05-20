@@ -38,13 +38,13 @@ function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementosNaLista = listaDeNumeroSorteados.length;
 
-    if(quantidadeDeElementosNaLista == numeroLimite){
-        listaDeNumeroSorteados =  [];
+    if (quantidadeDeElementosNaLista == numeroLimite) {
+        listaDeNumeroSorteados = [];
     }
 
     if (listaDeNumeroSorteados.includes(numeroEscolhido)) {
         return gerarNumeroAleatorio();
-    }else{
+    } else {
         listaDeNumeroSorteados.push(numeroEscolhido)
         console.log(listaDeNumeroSorteados);
         return numeroEscolhido;
